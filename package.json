@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,14 +16,20 @@
     "express": "^5.2.1",
     "knex": "^3.3.0",
     "mysql2": "^3.23.3",
-    "uuid": "^14.0.1"
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
     "@types/node": "^26.2.0",
+    "@types/supertest": "^7.2.1",
     "@types/uuid": "^10.0.0",
+    "jest": "^30.4.2",
     "nodemon": "^3.1.14",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.12",
     "ts-node": "^10.9.2",
-    "typescript": "^7.0.2"
+    "tsx": "^4.23.12",
+    "typescript": "^5.9.3"
   }
 }

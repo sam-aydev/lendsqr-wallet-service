@@ -13,7 +13,6 @@ export async function up(knex: Knex): Promise<void> {
     table.uuid("id").primary();
     table.uuid("user_id").references("id").inTable("users").onDelete("CASCADE");
     table.string("last_name").notNullable();
-    table.string("email").unique().notNullable();
     table.decimal("balance", 15, 2).defaultTo(0.0).notNullable();
     table.timestamps(true, true);
   });
