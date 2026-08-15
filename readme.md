@@ -63,4 +63,4 @@ The application follows a Service-Oriented Architecture (Controllers, Services, 
    \`\`\`
 
 ## 📄 Written Reports
-The detailed **Security Assessment** and **Failure Handling & Debugging Assessment** can be found here:
+The detailed **Security Assessment** and **Failure Handling & Debugging Assessment** can be found here: https://docs.google.com/document/d/1kJkbKT1RwPgK-R9uvrpjJrz2iqtFKuqDuJcG4_JtBv8/edit?usp=sharing
