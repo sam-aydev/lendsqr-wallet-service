@@ -13,8 +13,10 @@ A robust, secure Minimum Viable Product (MVP) wallet API built for Demo Credit, 
 The application follows a Service-Oriented Architecture (Controllers, Services, Middlewares, and Routes) to maintain DRY principles and separation of concerns.
 
 **Entity-Relationship Diagram:**
-![E-R Diagram](https://dbdesigner.page.link/LNnLoQPBkDoa6YZZ7)
-*(Or place the public link to your diagram here)*
+
+![E-R Diagram](./er-diagram.png)
+
+[View the live diagram on DBDesigner](https://dbdesigner.page.link/LNnLoQPBkDoa6YZZ7)
 
 ## 🔐 Core Features & Transaction Scoping
 *   **Adjutor Karma Validation:** Integrates with Lendsqr's Karma API to block blacklisted identities during onboarding.
