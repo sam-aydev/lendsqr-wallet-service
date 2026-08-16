@@ -7,9 +7,7 @@ export const fundWallet = async (userId: string, amount: number) => {
     throw new AppError("Funding amount must be greater than zero", 400);
   }
 
-  console.log(
-    `DEBUG: userId received is [${userId}] with length ${userId.length}. Expected length is 36.`,
-  );
+ 
   return await db.transaction(async (trx) => {
     // Get the user's wallet and lock the row to prevent race conditions
     const wallet = await trx("wallets")
@@ -96,7 +94,7 @@ export const withdrawFunds = async (userId: string, amount: number) => {
 
     // Deduct funds
     await trx('wallets').where({ id: wallet.id }).decrement('balance', amount);
-
+ 
     // Log transaction
     const txId = uuidv4();
     await trx('transactions').insert({

@@ -2,7 +2,7 @@ import db from "../database";
 import { AppError } from "../utils/AppError";
 import { checkKarmaBlacklist } from "./adjutorService";
 import { v4 as uuidv4 } from 'uuid';
-
+ 
 export const createUserAccount = async (
   firstName: string,
   lastName: string,

@@ -10,11 +10,10 @@ export const checkKarmaBlacklist = async (email: string) => {
           Authorization: `Bearer ${process.env.ADJUTOR_API_KEY}`,
         },
       },
-    );
+    ); 
 
     // Lendsqr Test Mode Handle: Allow bypassing so you can test your app locally
     if (response.data && response.data["mock-response"]) {
-      console.log("Adjutor API is in Test Mode. Bypassing blacklist check.");
       return true;
     }
 
@@ -37,10 +36,7 @@ export const checkKarmaBlacklist = async (email: string) => {
     }
 
     // Catch-all for network issues
-    console.error(
-      "Adjutor API Network Error:",
-      error.response?.data || error.message,
-    );
+  
     throw new AppError(
       "Service temporarily unavailable while verifying identity",
       502,

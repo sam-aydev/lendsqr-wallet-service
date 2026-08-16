@@ -31,7 +31,7 @@ describe('User Endpoints', () => {
     it('should return a 400 error if required fields are missing', async () => {
       const response = await request(app)
         .post('/api/users/signup')
-        .send({ first_name: 'Samuel' }); // Missing last_name and email
+        .send({ first_name: 'Samuel' }); 
 
       expect(response.status).toBe(400);
       expect(response.body.status).toBe('error');
